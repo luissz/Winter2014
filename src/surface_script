@@ -1,0 +1,10 @@
+#!/bin/bash
+rm ~/Documents/MIE/MIE-IAR/TSinference/data/$3;
+touch ~/Documents/MIE/MIE-IAR/TSinference/data/$3;
+for ((c=0;c<=$1;c++));
+do
+	for ((d=0;d<=$2;d++));
+	do
+		echo "$c $d" >> ~/Documents/MIE/MIE-IAR/TSinference/data/$3;
+	done;
+done;
